@@ -1,0 +1,19 @@
+#page-wrapper { flex-direction: column; }  /* sidebar arriba, main abajo */
+#sidebar { width: 100%; border-bottom: 1px solid #333; }
+#projects-grid { grid-template-columns: 1fr; }  /* 1 columna */
+
+@media (min-width: 768px) {
+    #projects-grid { grid-template-columns: repeat(2, 1fr); }  /* 2 columnas */
+}
+
+@media (min-width: 1024px) {
+    #page-wrapper { flex-direction: row; }     /* sidebar a la izquierda */
+    #hero-name {font-size: 3.8rem;}
+    #sidebar { width: 420px; height: 100vh; position: sticky; top: 0; }
+    #projects-grid { grid-template-columns: repeat(3, 1fr); }  /* 3 columnas */
+}
+
+#Header-introduction 
+{
+    text-align: center;
+}
