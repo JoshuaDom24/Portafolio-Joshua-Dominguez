@@ -278,8 +278,58 @@
             #site-header { padding: 20px; }
             #main-content { padding: 0 20px 40px; }
             #page-footer { padding: 24px 20px; }
-            #hero-name { font-size: clamp(2rem, 10vw, 3.5rem); }
+            #hero-name { font-size:24px; }
+            #cta-button { padding: 6px 12px !important; font-size: 0.65rem !important;}
+            #case-modal {
+        padding: auto !important;
+        font-size: 0.6rem !important;
+        justify-content: flex-start;
+        overflow-y: auto;
+    }
+
+    #case-modal > div:last-child {
+        height: auto !important;
+        flex-direction: column !important;
+        gap: 12px;
+    }
+
+    /* Galería más compacta */
+    #gallery-display {
+        padding: 48px 12px 56px !important;
+        min-height: 450px !important;
+    }
+
+    /* Botones nav fuera de la imagen, en fila abajo */
+    #case-modal .card-header {
+        font-size: 0.6rem;
+    }
+
+    /* Counter y botones más pequeños */
+    #gallery-prev,
+    #gallery-next {
+        padding: 6px 10px !important;
+        font-size: 0.65rem !important;
+    }
+
+    #gallery-counter {
+        padding: 6px 10px !important;
+        font-size: 0.65rem !important;
+    }
+
+    /* Info panel más compacto */
+    #modal-title {
+        font-size: 1.2rem !important;
+        margin-bottom: 12px !important;
+    }
+
+    #case-modal > div:last-child > div:last-child {
+        padding: 16px !important;
+        min-height: auto !important;
+        max-height: 250px !important;
+        overflow-y: auto !important;
+    }
         }
+
 
         @keyframes pulse {
             0%,100% { opacity:1; } 50% { opacity:0.4; }
@@ -362,7 +412,7 @@
         <p style="color:white;margin:0;">>_ TEL: (222) 469 9987</p>
     </div>
 
-    <a href="https://wa.me/522224699987?text=Hola%20Joshua!%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto."
+    <a id="cta-button" href="https://wa.me/522224699987?text=Hola%20Joshua!%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto."
        target="_blank" rel="noopener noreferrer"
        style="display:inline-flex;align-items:center;font-family:'Syne',sans-serif;font-weight:bold;font-size:0.875rem;text-transform:uppercase;letter-spacing:0.1em;padding:12px 24px;background:var(--blue);color:black;border:2px solid var(--blue);text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;"
        onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='5px 5px 0 white'"
@@ -524,7 +574,7 @@
         <div style="color:var(--blue);font-family:monospace;font-size:0.875rem;animation:pulse 2s infinite;display:flex;align-items:center;gap:8px;">
             <span style="display:inline-block;width:8px;height:16px;background:var(--blue);"></span> C:\ARCHIVE\VIEWER.EXE
         </div>
-        <button id="close-modal" style="color:white;font-family:monospace;font-weight:bold;background:#111;border:1px solid var(--border);padding:8px 16px;cursor:pointer;text-transform:uppercase;font-size:0.875rem;" onmouseover="this.style.background='#dc2626';this.style.borderColor='#dc2626'" onmouseout="this.style.background='#111';this.style.borderColor='var(--border)'">[ X ] CERRAR_VENTANA</button>
+        <button id="close-modal" style="color:white;font-family:monospace;font-weight:bold;background:#111;border:1px solid var(--border);padding:8px 16px;cursor:pointer;text-transform:uppercase;font-size:0.875rem;" onmouseover="this.style.background='#dc2626';this.style.borderColor='#dc2626'" onmouseout="this.style.background='#111';this.style.borderColor='var(--border)'">[ X ]</button>
     </div>
     <div style="width:100%;max-width:1152px;height:85vh;display:flex;flex-direction:column;gap:24px;">
         <div style="flex:1;background:#0a0a0a;border:1px solid var(--border);display:flex;flex-direction:column;position:relative;">
