@@ -481,7 +481,7 @@
 </article>
 
 
-        <article class="project-card" data-category="branding">
+        <article class="project-card" data-category="branding social_media">
     <div class="card-header"><span>>_ styling_la_archive.zip</span><span>[X]</span></div>
     
     <div class="card-img" style="position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 12px;">
@@ -529,19 +529,28 @@
 
 </article>
 
-        <article class="project-card" data-category="social_media branding">
-            <div class="card-header"><span>>_ la_granja_brand.pdf</span><span>[X]</span></div>
-            <div class="card-img"><span style="color:#6b7280;font-size:10px;">LOADING_ASSETS_0%</span></div>
-            <div style="padding:20px;display:flex;flex-direction:column;flex-grow:1;">
-                <div style="font-size:10px;color:var(--blue);margin-bottom:8px;font-weight:bold;text-transform:uppercase;letter-spacing:0.1em;">Social Media Identity</div>
-                <h3 style="font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:bold;text-transform:uppercase;margin:0 0 8px;color:white;">Restaurante La Granja</h3>
-                <p style="font-size:0.75rem;color:#9ca3af;flex-grow:1;margin-bottom:16px;">Línea gráfica que armoniza la esencia tradicional con un lenguaje visual actual para redes sociales.</p>
-                <div style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid var(--border);padding-top:12px;">
-                    <div style="font-size:9px;color:#6b7280;">Loc: Acapulco<br>Tradición & Digital</div>
-                    <button data-id="granja" class="ver-caso-btn" style="background:white;color:black;font-size:10px;font-weight:bold;padding:4px 12px;border:none;cursor:pointer;text-transform:uppercase;" onmouseover="this.style.background='var(--blue)';this.style.color='white'" onmouseout="this.style.background='white';this.style.color='black'">Ver Caso</button>
-                </div>
-            </div>
-        </article>
+        <article class="project-card" data-category="social_media">
+    <div class="card-header"><span>>_ la_granja_brand.pdf</span><span>[X]</span></div>
+
+    <div class="card-img" style="position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 12px;">
+
+        <img src="./Images/La_Granja.png" alt="Restaurante La Granja" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+
+        <span style="position: relative; z-index: 2; background:black; color:white; padding:4px 8px; font-size:0.7rem; border:1px solid white; text-transform:uppercase;">#LAGRANJA</span>
+
+    </div>
+
+    <div style="padding:20px;display:flex;flex-direction:column;flex-grow:1;">
+        <div style="font-size:10px;color:var(--blue);margin-bottom:8px;font-weight:bold;text-transform:uppercase;letter-spacing:0.1em;">Social Media Identity</div>
+        <h3 style="font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:bold;text-transform:uppercase;margin:0 0 8px;color:white;">Restaurante La Granja</h3>
+        <p style="font-size:0.75rem;color:#9ca3af;flex-grow:1;margin-bottom:16px;"> Co-desarrollo de una línea gráfica que armoniza la esencia tradicional del lugar con un lenguaje visual actual para redes sociales.</p>
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid var(--border);padding-top:12px;">
+            <div style="font-size:9px;color:#6b7280;">Loc: Acapulco<br>Ft: Woon Agency</div>
+            <button data-id="granja" class="ver-caso-btn" style="background:white;color:black;font-size:10px;font-weight:bold;padding:4px 12px;border:none;cursor:pointer;text-transform:uppercase;" onmouseover="this.style.background='var(--blue)';this.style.color='white'" onmouseout="this.style.background='white';this.style.color='black'">Ver Caso</button>
+        </div>
+    </div>
+
+</article>
 
         <article class="project-card" style="opacity:0.5;" data-category="branding">
             <div class="card-header"><span>>_ new_project_05.exe</span><span>[X]</span></div>
@@ -659,22 +668,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // DB
     const db = {
-        diario: { title:'DIARIO, MUJER Y CAFÉ', role:'Project Manager & Lead Visual', description:'<p>Como Project Manager & Lead Visual Designer dentro de Pulso Creative Haus, participé activamente en la gestión de identidad visual y coordinación estratégica.</p><p style="margin-top:12px;">La película terminó #1 en taquilla en Puerto Rico con distribución en EE. UU., Puerto Rico y Canadá.</p>', metrics:['> #1 en taquilla PR (127K boletos)','> 1,246,232 org views','> 307,945 cuentas alcanzadas'], gallery:['[COLLAGE PROMOCIONAL]','[DISEÑO DE REDES]','[FOTOS DEL ELENCO]'] },
-        diva:   { title:'DIVA LOMAS: STYLING LA', role:'Identity & Branding', description:'<p>Diseñador en la identidad visual y creación de estrategias, para ecosistema de marcas en Los Ángeles: Styling LA, Mascooltura, Modalab.</p>', metrics:['> +300k de seguidores en IG','> +1.3 Millones de seguidores en Tiktok','> Loc: Los Angeles'], gallery:['[IDENTIDAD VISUAL DIVA]','[POSTERS MODALAB]','[COLLAB MANELYK]'] },
-        imagen: { title:'IMAGEN TV PUEBLA', role:'Design Head / TV Host', description:'<p>Jefe de diseño gráfico en Dospuntos.media. Conductor de "Es Tendencia!" y "Motivados".</p>', metrics:['> Max Rating: 21,000','> 651,162 Visualizaciones Orgánicas','> +35.2% Crecimiento de cuenta'], gallery:['[SET DE TELEVISIÓN]','[GRÁFICOS EN PANTALLA]','[PORTADAS DOSPUNTOS]'] },
-        granja: { title:'RESTAURANTE LA GRANJA', role:'Social Media Identity', description:'<p>Línea gráfica que armoniza la esencia tradicional con un lenguaje visual actual para redes sociales en Acapulco.</p>', metrics:['> Concepto: Tradición & Digital','> Locación: Acapulco','> Identidad de Menú y Redes'], gallery:['[FOTOGRAFÍA ALIMENTOS]','[DISEÑO DE REDES SOCIALES]','[MENÚ TRADICIONAL]'] }
+        diario: { title:'DIARIO, MUJER Y CAFÉ', role:'Project Manager & Lead Visual', description:'<p>Como Project Manager & Lead Visual Designer dentro de Pulso Creative Haus, participé activamente en la gestión de identidad visual y coordinación estratégica.</p><p style="margin-top:12px;">La película terminó #1 en taquilla en Puerto Rico con distribución en EE. UU., Puerto Rico y Canadá.</p>', metrics:['> #1 en taquilla PR (127K boletos)','> 1,246,232 org views','> 307,945 cuentas alcanzadas'], gallery:['./Images/Diva.png','./Images/diario_2.jpg','./Images/diario_3.jpg'] },
+        diva:   { title:'DIVA LOMAS', role:'Identity & Branding', description:'<p>Diseñador en la identidad visual y creación de estrategias, para ecosistema de marcas en Los Ángeles: Styling LA, Mascooltura, Modalab.</p>', metrics:['> +300k de seguidores en IG','> +1.3 Millones de seguidores en Tiktok','> Loc: Los Angeles'], gallery:['./Images/diva_1.jpg','./Images/diva_2.jpg','./Images/diva_3.jpg'] },
+        imagen: { title:'IMAGEN TV PUEBLA', role:'Design Head / TV Host', description:'<p>Jefe de diseño gráfico en Dospuntos.media. Conductor de "Es Tendencia!" y "Motivados".</p>', metrics:['> Max Rating: 21,000','> 651,162 Visualizaciones Orgánicas','> +35.2% Crecimiento de cuenta'], gallery:['./Images/imagen_1.jpg','./Images/imagen_2.jpg','./Images/imagen_3.jpg'] },
+        granja: { title:'RESTAURANTE LA GRANJA', role:'Social Media Identity', description:'<p>Account Manager y diseñador gráfico by Woon Agency, a cargo de la creación de piezas visuales para redes sociales.</p>', metrics:['> Posicionamiento digital de la marca','> Locación: Acapulco','> Identidad gráfica para redes sociales'], gallery:['./Images/granja_1.jpg','./Images/granja_2.jpg','./Images/granja_3.jpg'] }
     };
 
     const modal = document.getElementById('case-modal');
     let idx = 0, imgs = [];
 
+    // ── GALERÍA CON IMÁGENES REALES ──
     const updateGallery = () => {
-        document.getElementById('gallery-placeholder-text').innerText = imgs[idx];
-        document.getElementById('gallery-counter').innerText = `${idx+1} / ${imgs.length}`;
-        document.getElementById('gallery-filename').innerText = `>_ vista_previa_${idx+1}.jpg`;
         const v = document.getElementById('gallery-visual');
         v.style.opacity = '0';
-        setTimeout(() => v.style.opacity = '1', 150);
+
+        setTimeout(() => {
+            v.innerHTML = `<img src="${imgs[idx]}" 
+                alt="Vista previa ${idx + 1}" 
+                style="max-width:100%;max-height:100%;object-fit:contain;display:block;margin:auto;">`;
+            document.getElementById('gallery-counter').innerText = `${idx + 1} / ${imgs.length}`;
+            document.getElementById('gallery-filename').innerText = `>_ vista_previa_${idx + 1}.jpg`;
+            v.style.opacity = '1';
+        }, 150);
     };
 
     document.querySelectorAll('.ver-caso-btn').forEach(btn => {
